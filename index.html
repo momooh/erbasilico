@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Ocimum basilicum</title>
+    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-default.css" />
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+    <style>
+        html {
+            background: url("basilico.jpg") no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        body {
+            font: Gill Sans, serif;
+        }
+        .odometer {
+            font-size: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ocimum basilicum</h1>
+    </header>
+    <div id="odometer" class="odometer">0</div>
+    <h2>Piante di basilico impiantate</h2>
+    <footer>
+        <h3>Un ciss di Mohamed HAMED ALI ABDEL REHIME</h3>
+    </footer>
+    <script>
+        (function() {
+
+            // set start value
+            var currentValue = Math.round(new Date().getTime()/1000);
+
+            // every second, set odometer value to current value, and count up by one
+            setInterval(function() { 
+
+            odometer.innerHTML = currentValue;
+            currentValue++;
+
+            }, 1000);
+
+            })();
+    </script>
+</body>
